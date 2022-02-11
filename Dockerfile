@@ -22,6 +22,6 @@ RUN tar xzf openvscode-server-v${VSCODE_TAG}-linux-x64.tar.gz && \
     mv /openvscode-server-v${VSCODE_TAG}-linux-x64 /openvscode && \
     chmod 777 /setup.sh
 
-EXPOSE 81
+EXPOSE 3000
 
 CMD ["bash", "/setup.sh" ]
